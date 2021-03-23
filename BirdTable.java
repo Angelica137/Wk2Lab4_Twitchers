@@ -19,7 +19,14 @@ public class BirdTable {
 
 		// Declare string element and double element to collect user input
 		String strElement;
-		double doubElement;
+		int intElement;
+
+		// Enter record using inputDialog and a loop
+		for (int i = 0; i < birds.length; i++) {
+			strElement = JOptionPane.showInputDialog("How many birds did you see today? " + (i + 1));
+			intElement = Integer.parseInt(strElement);
+			birds[i] = intElement;
+		}
 
 		// Display Output using a histogram of '*' - see Histogram Project
 
