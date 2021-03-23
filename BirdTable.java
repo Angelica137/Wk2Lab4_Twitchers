@@ -30,13 +30,24 @@ public class BirdTable {
 
 		// Display Output using a histogram of '*' - see Histogram Project
 		// declare string to hold *s
-		String hist = "Element";
+		System.out.println(birds);
+		String hist = "Element\tValue\tHistogram";
 
 		// iterate through array to create a bar
-		for (int i = 0; i < birds.length; i++) {
-			hist += "\n" + i + "\t" + birds[i] + "\t";
+		for (int j = 0; j < birds.length; j++) {
+			hist += "\n" + j + "\t" + birds[j] + "\t";
 
+			// populate bars with * using nested loop
+			for (int stars = 0; stars < birds[j]; stars++)
+				hist += "*";
 		}
+
+		// Output text object to print histogram
+
+		JTextArea outputArea = new JTextArea();
+		outputArea.setText(hist);
+
+		JOptionPane.showMessageDialog(null, outputArea, "Birdies", JOptionPane.INFORMATION_MESSAGE);
 
 	}
 }
