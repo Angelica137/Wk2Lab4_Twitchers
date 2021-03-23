@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
+PROJECT TITLE: Twitchers
 PURPOSE OF PROJECT:
-VERSION or DATE:
+VERSION or DATE: 20 Mat 2021
 HOW TO START THIS PROJECT:
-AUTHORS:
+AUTHORS: Angelica Beristain
 USER INSTRUCTIONS:
